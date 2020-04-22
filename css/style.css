@@ -267,3 +267,139 @@ img {
   padding: 15px 0;
   text-align: center;
 }
+
+/* Qualidade */
+
+.qualidade {
+  max-width: 960px;
+  margin: 60px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.qualidade-item {
+  flex: 1 1 300px;
+  /* flex: 1 1 calc(33.333% - 20px); */
+  margin: 20px 10px;
+}
+
+.qualidade-item h2 {
+  font-size: 2.25em;
+  color: #a4a4a4;
+  margin: 20px;
+}
+
+.qualidade-item h2::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 30px;
+  margin-right: 10px;
+  background: blue;
+}
+
+.qualidade-item:nth-of-type(3n+1) h2::before {
+  background: #a281ff;
+}
+
+.qualidade-item:nth-of-type(3n+2) h2::before {
+  background: #f9265e;
+}
+
+.qualidade-item:nth-of-type(3n+3) h2::before {
+  background: #66d9eb;
+}
+
+.qualidade-item p {
+  font-size: 1.25em;
+  line-height: 1.4;
+  color: #7c7c7c;
+}
+
+/* Newsletter */
+
+.newsletter {
+  background: #f7f7f7;
+  padding: 60px calc((100% - 960px) / 2 );
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newsletter-info {
+  flex: 1 1 260px;
+  margin: 0 10px;
+}
+
+.newsletter-info h1 {
+  font-size: 3em;
+  color: #222;
+}
+
+.newsletter-info p {
+  font-size: 1.25em;
+  font-style: italic;
+  max-width: 230px;
+  color: #7c7c7c;
+}
+
+.newsletter-form {
+  flex: 2 1 260px;
+  margin: 0 10px;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input {
+  flex: 3 1 200px;
+  font-size: 1.25em;
+  color: #7c7c7c;
+  font-family: "Nunito", sans-serif;
+  font-style: italic;
+  border: 3px solid #2c70ff;
+  background: transparent;
+  padding: 5px 10px;
+  margin: 0;
+  border-radius: 0;
+}
+
+.newsletter-form button {
+  flex: 1 1 150px;
+  font-family: "Nunito", sans-serif;
+  font-style: 2.1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #2c70ff;
+  color: #fff;
+  border: 3px solid #2c70ff;
+  cursor: pointer;
+  margin: 0;
+  padding: 15px 25px
+}
+
+.newsletter-form button:hover {
+  background: #66d9eb;
+  border: 3px solid #66d9eb;
+}
+
+@media (max-width: 600px) {
+  .newsletter-form button {
+    font-size: 1.5em;
+  }
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  height: 100px;
+  background: #2c70ff;
+  align-items: center;
+}
+
+.footer p {
+  flex: 1;
+  text-align: center;
+  font-size: 1.2em;
+  color: #f7f7f7;
+}
